@@ -1,0 +1,21 @@
+galaxy_info:
+  author: Dustin Rue
+  description: Installs Elasticsearch using Docker and exposes it on ports 9200 and 9300
+
+  license: MIT
+
+  min_ansible_version: 1.2
+
+  platforms:
+  - name: Ubuntu
+    versions:
+      - xenial
+  
+
+  galaxy_tags: 
+    - docker
+    - elasticsearch
+
+dependencies: 
+  - dustinrue.xenial-bootstrap
+  - dustinrue.docker

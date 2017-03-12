@@ -1,0 +1,10 @@
+---
+- name: Start elasticsearch
+  docker_container:
+    name: elasticsearch
+    image: elasticsearch:5.2
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    state: started
+    restart: yes
